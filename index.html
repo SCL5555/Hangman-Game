@@ -4,9 +4,13 @@
 	<title>Hangman Game</title>
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<script src="assets/javascript/game.js" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/javascript/game.js" ></script>
 </head>
-<body>
+<body onload="startGame()">
+	<h3>word to solve is: <span id="wordtoSolve"></span></h3>
+
+	<h3>Guessed Letters: <span id="guessedLetters"> No Guesses Yet</span></h3>
+	<h3>Number of Guesses Left: <span id="guessesLeft">12</span></h3>
 
 </body>
 </html>
