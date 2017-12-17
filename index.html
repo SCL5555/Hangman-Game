@@ -4,13 +4,47 @@
 	<title>Hangman Game</title>
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<script type="text/javascript" src="assets/javascript/game.js" ></script>
 </head>
 <body onload="startGame()">
-	<h3>word to solve is: <span id="wordtoSolve"></span></h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="jumbotron jumbotron-fluid">
+				  <div class="container">
+				    <h1 class="display-3">Welcome to hangman!</h1>
+				    <p class="lead">A dog themed game</p>
 
-	<h3>Guessed Letters: <span id="guessedLetters"> No Guesses Yet</span></h3>
-	<h3>Number of Guesses Left: <span id="guessesLeft">12</span></h3>
+					<div class="row">
+						
+						<div class="col-md-3">
+				    		<p class="alert alert-info ">Press any key to play!</p>
+				   		</div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1">
+				
+			</div>
+
+			<div class="col-md-10">
+				<div class="card bg-light mb-3">
+				  <div class="card-header text-white bg-primary">Let's Play</div>
+				  <div class="card-body">
+				    <p class="card-text">word to solve is: <span class="alert-success" id="wordtoSolve"></span></p>
+				    <p class="card-text">Guessed Letters: <span class="alert-warning" id="guessedLetters"> No Guesses Yet</span></p>
+				    <p class="card-text">Number of Guesses Left: <span class="alert-danger" id="guessesLeft">12</span></p>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 </body>
 </html>

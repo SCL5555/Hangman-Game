@@ -31,7 +31,7 @@ function startGame()
 	document.getElementById("guessesLeft").innerHTML = numGuesses;
 	document.getElementById("guessedLetters").innerHTML = "No Guesses Yet";
 
-	alert("Press any key to begin!");
+	// alert("Press any key to begin!");
 }
 
 function win()
@@ -54,15 +54,10 @@ function win()
 			{
 				solvingDisplayArray.splice(i , 1, letterGuessed);
 				document.getElementById("wordtoSolve").innerHTML = solvingDisplayArray.join(" ");
-	
-				console.log("solving array " + solvingDisplayArray);
 			}
 		}
 		
-		
-
 		lettersGuessed.push(letterGuessed);
-		console.log("letters guessed: " + lettersGuessed);
 		document.getElementById("guessedLetters").innerHTML = lettersGuessed.join(" ");
     	numGuesses--;
     	document.getElementById("guessesLeft").innerHTML = numGuesses;
