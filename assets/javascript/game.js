@@ -43,12 +43,11 @@ function win()
 	}
 }
 
-	document.onkeyup = function(event){
+	document.onkeypress = function(event){
     	var letterGuessed = event.key.toLowerCase();
 
 		for(var i = 0; i < wordArray.length; i++)
 		{
-			
 			//if letter guessed matches any letter in the array then place that letter in that spot of a new array
 			if (letterGuessed === wordArray[i])
 			{
@@ -58,6 +57,7 @@ function win()
 		}
 		
 		lettersGuessed.push(letterGuessed);
+		console.log(lettersGuessed);
 		document.getElementById("guessedLetters").innerHTML = lettersGuessed.join(" ");
     	numGuesses--;
     	document.getElementById("guessesLeft").innerHTML = numGuesses;
@@ -68,8 +68,11 @@ function win()
     		// var wordPlaying = words[Math.floor(Math.random() * words.length)];
     		startGame();
     	}
-    	win();
+    	
      }
+     document.onkeyup = function(event){
+        win();
+    }
 
 
 
