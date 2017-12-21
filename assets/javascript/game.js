@@ -32,7 +32,7 @@ function startGame()
 	document.getElementById("guessesLeft").innerHTML = numGuesses;
 	document.getElementById("guessedLetters").innerHTML = "No Guesses Yet";
 
-	// alert("Press any key to begin!");
+	
 }
 
 function win()
@@ -68,7 +68,6 @@ function win()
     	if (numGuesses <= 0 )
     	{
     		alert("Game over, out of guesses!");
-    		// var wordPlaying = words[Math.floor(Math.random() * words.length)];
     		startGame();
     	}
     	
