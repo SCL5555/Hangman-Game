@@ -4,8 +4,8 @@
 	<title>Hangman Game</title>
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<script type="text/javascript" src="assets/javascript/game.js" ></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
 </head>
 <body onload="startGame()">
 	<div class="container">
@@ -39,6 +39,7 @@
 				    <p class="card-text">word to solve is: <span class="alert-success" id="wordtoSolve"></span></p>
 				    <p class="card-text">Guessed Letters: <span class="alert-warning" id="guessedLetters"> No Guesses Yet</span></p>
 				    <p class="card-text">Number of Guesses Left: <span class="alert-danger" id="guessesLeft">12</span></p>
+				    <p class="card-text">Wins: <span class="alert-success" id="wins">0</span></p>
 				  </div>
 				</div>
 			</div>
@@ -47,4 +48,5 @@
 
 
 </body>
+<script type="text/javascript" src="assets/javascript/game.js" ></script>
 </html>

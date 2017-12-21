@@ -9,6 +9,7 @@ var lettersGuessed = [];
 var solvingDisplayArray = [];
 var wordToString;
 var numGuesses;
+var wins = 0;
 
 
 function startGame()
@@ -39,6 +40,8 @@ function win()
 	if (JSON.stringify(wordArray) === JSON.stringify(solvingDisplayArray))
 	{
 		alert("you won!");
+		wins++;
+		document.getElementById("wins").innerHTML = wins;
 		startGame();
 	}
 }
